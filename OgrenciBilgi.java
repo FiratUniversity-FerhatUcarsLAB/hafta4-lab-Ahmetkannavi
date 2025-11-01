@@ -1,60 +1,30 @@
-/*
- * Ad Soyad: [ADINIZI BURAYA YAZIN]
- * Ogrenci No: [OGRENCI NUMARANIZI BURAYA YAZIN]
- * Tarih: [TARIHI BURAYA YAZIN]
- * Aciklama: Gorev 1 - Ogrenci Bilgi Sistemi
- * 
- * Bu program kullanicidan ogrenci bilgilerini alir ve
- * duzenli bir formatta ekrana yazdirir.
- * Diğer java dosyalarının başında da bu örnek formattaki gibi kısa bilgi giriniz
- */
-
 import java.util.Scanner;
+class ogrenciBilgi{
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("==Ogrenci Bilgileri==");
 
-public class OgrenciBilgi {
-    public static void main(String[] args) {
-        // Scanner objesi olusturun
-        
-        
-        // Degisken tanimlamalari
-        // String ad, soyad;
-        // int ogrenciNo, yas;
-        // double gpa;
-        
-        
-        // Kullanicidan bilgileri alin
-        System.out.println("=== OGRENCI BILGI SISTEMI ===");
-        System.out.println();
-        
-        // Ad
-        
-        
-        // Soyad
-        
-        
-        // Ogrenci No
-        
-        
-        // Yas
-        
-        
-        // GPA
-        
-        
-        // Bilgileri ekrana yazdirin
-        System.out.println("\n=== OGRENCI BILGI SISTEMI ===");
-        
-        // COZUMUNUZU BURAYA YAZIN
-        
-        
-        
-        
-        
-        
+    System.out.print("ad:");
+    String ad = input.nextLine();
 
-        
-        
-        // Scanner'i kapatin (önemli pratik)
-        
-    }
+    System.out.print("soyad:");
+    String soyad = input.nextLine();
+
+    System.out.print("no:");
+    int no = input.nextInt();
+
+    System.out.print("yas:");
+    int yas = input.nextInt();
+
+    System.out.print("gpa(0.00-4.00):");
+    double gpa = input.nextDouble();
+
+    System.out.printf("\nAdi: %s" , ad);
+    System.out.printf("\nSoyad: %s" , soyad);
+    System.out.printf("\nNO: %d" , no);
+    System.out.printf("\nYas: %d" , yas);
+    System.out.printf("\nGPA: %.2f" , gpa);
+
+
+}
 }
